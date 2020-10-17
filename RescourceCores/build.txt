@@ -1,0 +1,3 @@
+displayName = Hard To Less Hard
+author = Sockmit2007
+version = 2.0.0.1

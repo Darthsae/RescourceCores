@@ -1,0 +1,21 @@
+using Microsoft.Xna.Framework;
+using Terraria;
+using Terraria.ModLoader;
+
+namespace ModNamespaceHere
+{
+	public class NameHere : ModTile
+	{
+		public override void SetDefaults()
+		{
+			Main.tileSolid[Type] = true;
+			Main.tileMergeDirt[Type] = true;
+			Main.tileBlockLight[Type] = true;
+			Main.tileLighted[Type] = true;
+			dustType = mod.DustType("Sparkle");
+			drop = mod.ItemType("ExampleBlock");
+			AddMapEntry(new Color(200, 200, 200));
+			// Set other values here
+		}
+	}
+}
